@@ -12,7 +12,7 @@ body{
     width: 60%;
     border: 2px black solid;
     border-radius: 6px;
- 
+    box-shadow: 3px 3px 2px grey;
     margin: auto auto;
    
     
@@ -30,8 +30,11 @@ header{
 
 main{
     background-color: white;
-    height: 150px;
+   
     padding: 30px 15px;
+    display: grid;
+    grid-template-columns: 40% 20% 30%;
+    grid-column-gap: 50px 0px ;
 }
 
 .main_info{
@@ -40,14 +43,34 @@ main{
      text-align: center;
 }
 
+.main_info > p{ 
+    font-size: 1.2em;
+    
+}
+
+.social_logo{
+ height:20px;   
+    
+}
+
+
 .photo_profil{
     width: 17%;
     border:2px white solid;
+    box-shadow: 0 3px 2px grey;
     position: absolute;
     left: 70px;
     top: 80px;
 }
 
-.description{
-    
+#description{
+    grid-row: 1/6;
+    padding: 6px;
+}
+
+.info_categorie{
+    grid-column: 2;
+    margin-left: 50px;
+    font-weight: bold;
+    color: cornflowerblue;
 }
